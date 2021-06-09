@@ -1,12 +1,25 @@
 <template>
   <div class="home">
+    
+    <v-text-field
+      @click:append="addTask"
+      @keyup.enter="addTask"
+      v-model="newTaskTitle"
+      class="pa-3"
+      outlined
+      label ="Add Task"
+      append-icon="mdi-plus"
+      hide-details
+      clearable
+      >
+    </v-text-field>
    <v-list
       class="pt-0"
       flat
     >
 
     <div 
-    v-for="task in tasks"
+        v-for="task in tasks"
        :key="task.id">
 
        <v-list-item
@@ -43,7 +56,9 @@
       </v-list-item> 
     </div> 
      </v-list>
+     
     </div>  
+    
 </template>
 
 <script>
@@ -52,11 +67,10 @@
   export default {
   data() {
     return {
-      dname: 'Todo',
-      newTask: {
-        title: '',
-        descr: ''
-      },
+      name: 'Todo',
+      dialog: false,
+      newTaskTitle:'',
+      newTaskDescription: '',
       tasks: [
         {
           id: 1,
@@ -87,6 +101,17 @@
      },
      deleteTask(id){
        this.tasks = this.tasks.filter(task => task.id !== id)
+     },
+     addTask() {
+       let newTask = {
+         id: Date.now(),
+         title: this.newTaskTitle,
+         descr: this.newTaskDescription,
+         done:false
+       }
+       this.tasks.push(newTask)
+       this.newTaskTitle = ''
+       this.newTaskDescription = ''
      }
     }
   }

@@ -2,25 +2,13 @@
   <div class="about pa-6">
     <h1>About Olawale Todo</h1>
    <p>
-     Lorem ipsum dolor sit amet consectetur 
-     adipisicing elit. Odio repellendus consectetur explicabo,
-      nostrum et non laboriosam consequuntur nulla laudantium 
-      dolor adipisci dolores? Voluptas earum numquam 
-     reprehenderit ipsam voluptatem aspernatur perferendis.
+     Created by Olawale Oluwaseyi
    </p>
     <p>
-     Lorem ipsum dolor sit amet consectetur 
-     adipisicing elit. Odio repellendus consectetur explicabo,
-      nostrum et non laboriosam consequuntur nulla laudantium 
-      dolor adipisci dolores? Voluptas earum numquam 
-     reprehenderit ipsam voluptatem aspernatur perferendis.
+     +2348123136611
    </p>
     <p>
-     Lorem ipsum dolor sit amet consectetur 
-     adipisicing elit. Odio repellendus consectetur explicabo,
-      nostrum et non laboriosam consequuntur nulla laudantium 
-      dolor adipisci dolores? Voluptas earum numquam 
-     reprehenderit ipsam voluptatem aspernatur perferendis.
+     seyiolawale50@gmail.com
    </p>
   </div>
 </template>
